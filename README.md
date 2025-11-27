@@ -460,7 +460,7 @@ If you use this tool in your research or projects, please cite:
 ```bibtex
 @software{modelstack2024,
   title={ModelStack Benchmark Studio: Interactive Ensemble Learning Platform},
-  author={Your Name},
+  author={Navneet Shuka},
   year={2024},
   url={https://github.com/yourusername/modelstack-benchmark-studio},
   note={Bagging-based ensemble approach for robust ML model evaluation}
@@ -469,7 +469,7 @@ If you use this tool in your research or projects, please cite:
 
 **Research Paper:**
 ```
-[Your Name]. (2024). "Enhancing Machine Learning Model Robustness 
+Navneet Shukla. (2024). "Enhancing Machine Learning Model Robustness 
 through Bagging-based Ensemble Methods: A Benchmark Study." 
 Journal of Machine Learning Research, Volume X, Issue Y.
 ```
@@ -543,13 +543,6 @@ furnished to do so, subject to the following conditions:
 
 ---
 
-## 📊 Statistics
-
-![GitHub stars](https://img.shields.io/github/stars/yourusername/modelstack-benchmark-studio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/modelstack-benchmark-studio?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/yourusername/modelstack-benchmark-studio?style=social)
-
----
 
 <div align="center">
 
