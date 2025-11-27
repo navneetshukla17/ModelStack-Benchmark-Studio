@@ -124,7 +124,7 @@ These issues are amplified in domains like:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/modelstack-benchmark-studio.git
+   git clone https://github.com/navneetshukla/modelstack-benchmark-studio.git
    cd modelstack-benchmark-studio
    ```
 
@@ -390,27 +390,48 @@ y_pred = bagging_model.predict(X_test)
 
 ### Key Research Outcomes
 
-Based on experiments with benchmark datasets:
+Based on experiments conducted on benchmark datasets from scikit-learn:
 
 | Dataset | Individual Best | Bagging Ensemble | Improvement |
 |---------|----------------|------------------|-------------|
-| Iris | 94.7% | 97.3% | +2.6% |
-| Diabetes | 76.8% | 79.5% | +2.7% |
-| Digits | 96.2% | 97.8% | +1.6% |
+| Iris (KNN) | 95.3% | 97.1% | +1.8% |
+| Diabetes (DT) | 73.2% | 80.5% | +7.3% |
+| Digits (LR) | 93.5% | 96.2% | +2.7% |
 
 ### Variance Reduction
 
-Bagging demonstrated significant variance reduction:
-- **Iris:** 35% reduction in prediction variance
-- **Diabetes:** 42% reduction in prediction variance
-- **Digits:** 28% reduction in prediction variance
+Bagging demonstrated significant variance reduction across all datasets:
+- **Iris:** 50% reduction (0.008 → 0.004)
+- **Diabetes:** 57% reduction (0.021 → 0.009)
+- **Digits:** 53% reduction (0.015 → 0.007)
 
-### Generalization Improvement
+### Robustness Under Noise and Imbalance
 
-Cross-validation results show improved generalization:
-- Average CV score improvement: **+3.2%**
-- Standard deviation reduction: **-38%**
-- Overfitting risk reduction: **Significant**
+**Noise Resilience (10% artificial noise):**
+- Diabetes Base DT: 73.2% → 66.4% (dropped 6.8%)
+- Diabetes Bagging: 80.5% → 78.9% (dropped only 1.6%)
+
+**Imbalance Tolerance:**
+- Digits Logistic Regression: 93.5% → 89.1%
+- Digits Bagging: 96.2% → 94.7%
+
+### Educational Impact
+
+Survey results from MCA students (n=30):
+- **90%** found Bagging easier to interpret than Boosting
+- **87%** reported improved understanding via Streamlit visualization
+- **93%** agreed that Bagging enhanced robustness perception
+
+### Performance Metrics Summary
+
+| Dataset | Model | Accuracy | Precision | Recall | F1-Score | Variance |
+|---------|-------|----------|-----------|--------|----------|----------|
+| Diabetes | Decision Tree | 73.2% | 0.72 | 0.71 | 0.71 | 0.021 |
+| Diabetes | Bagging (DT) | 80.5% | 0.81 | 0.80 | 0.80 | 0.009 |
+| Iris | KNN | 95.3% | 0.95 | 0.95 | 0.95 | 0.008 |
+| Iris | Bagging (KNN) | 97.1% | 0.97 | 0.97 | 0.97 | 0.004 |
+| Digits | Logistic Reg. | 93.5% | 0.93 | 0.93 | 0.93 | 0.015 |
+| Digits | Bagging (LR) | 96.2% | 0.96 | 0.96 | 0.96 | 0.007 |
 
 ---
 
@@ -430,7 +451,7 @@ We welcome contributions from the community! Here's how you can help:
 
 ```bash
 # Fork and clone the repository
-git clone https://github.com/yourusername/modelstack-benchmark-studio.git
+git clone https://github.com/navneetshukla/modelstack-benchmark-studio.git
 
 # Create a feature branch
 git checkout -b feature/your-feature-name
@@ -458,21 +479,32 @@ pytest tests/
 If you use this tool in your research or projects, please cite:
 
 ```bibtex
-@software{modelstack2024,
-  title={ModelStack Benchmark Studio: Interactive Ensemble Learning Platform},
-  author={Navneet Shuka},
-  year={2024},
-  url={https://github.com/yourusername/modelstack-benchmark-studio},
-  note={Bagging-based ensemble approach for robust ML model evaluation}
+@inproceedings{shukla2022enhancing,
+  title={Enhancing Model Robustness through Bagging-Based Ensemble Learning},
+  author={Shukla, Navneet},
+  month={March},
+  year={2022},
+  supervisor={Mishra, Padma},
+  institution={Thakur Institute of Management Studies, Career Development \& Research (TIMSCDR)},
+  note={Interactive Streamlit-based platform for ensemble learning visualization}
 }
 ```
 
 **Research Paper:**
 ```
-Navneet Shukla. (2024). "Enhancing Machine Learning Model Robustness 
-through Bagging-based Ensemble Methods: A Benchmark Study." 
-Journal of Machine Learning Research, Volume X, Issue Y.
+Shukla, N., Siddiquie, A., & Mishra, P. (2022). 
+"Enhancing Model Robustness through Bagging-Based Ensemble Learning." 
+tinyML Research Symposium'22, March 2022, San Jose, CA.
+Thakur Institute of Management Studies, Career Development & Research (TIMSCDR).
 ```
+
+**Authors:**
+- **Navneet Shukla** (182) - shuklanavneet2817@gmail.com
+- **Aadil Siddiquie** (183) - aadil.siddiquie183@gmail.com
+- **Research Supervisor:** Dr. Padma Mishra
+
+**Institution:**
+Thakur Institute of Management Studies, Career Development & Research (TIMSCDR)
 
 ---
 
@@ -483,7 +515,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ```
 MIT License
 
-Copyright (c) 2024 ModelStack Benchmark Studio
+Copyright (c) 2022 Navneet Shukla, Aadil Siddiquie
+Thakur Institute of Management Studies, Career Development & Research (TIMSCDR)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -492,32 +525,54 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-[Full MIT License text...]
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
 ---
 
 ## 📞 Contact
 
-- **Project Maintainer:** Navneet Shukla
-- **Email:** shuklanavneet2817@gmail.com
-- **LinkedIn:** [[Your LinkedIn](https://linkedin.com/in/yourprofile)](https://www.linkedin.com/in/navneet-shukla17/)
+**Authors:**
+- **Navneet Shukla** (182)
+  - Email: shuklanavneet2817@gmail.com
+  - Institution: Thakur Institute of Management Studies, Career Development & Research (TIMSCDR)
+
+- **Aadil Siddiquie** (183)
+  - Email: aadil.siddiquie183@gmail.com
+  - Institution: Thakur Institute of Management Studies, Career Development & Research (TIMSCDR)
+
+**Research Supervisor:**
+- **Dr. Padma Mishra**
+  - Institution: Thakur Institute of Management Studies, Career Development & Research (TIMSCDR)
 
 ### Support
 
-- **Issues:** [GitHub Issues](https://github.com/yourusername/modelstack-benchmark-studio/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/yourusername/modelstack-benchmark-studio/discussions)
-- **Documentation:** [Wiki](https://github.com/yourusername/modelstack-benchmark-studio/wiki)
+- **Issues:** [GitHub Issues](https://github.com/navneetshukla/modelstack-benchmark-studio/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/navneetshukla/modelstack-benchmark-studio/discussions)
+- **Documentation:** [Wiki](https://github.com/navneetshukla/modelstack-benchmark-studio/wiki)
+- **Research Paper:** Available at tinyML Research Symposium'22 Proceedings
 
 ---
 
 ## 🙏 Acknowledgments
 
+- **Dr. Padma Mishra** - Research Supervisor and Mentor
+- **Thakur Institute of Management Studies, Career Development & Research (TIMSCDR)** - Institutional Support
+- **tinyML Research Symposium'22** - Conference Platform
 - **scikit-learn** team for excellent ML library
 - **Streamlit** for the amazing web framework
 - **Plotly** for interactive visualizations
-- Research supervisors and collaborators
 - Open-source community contributors
+- MCA students who participated in the usability study (n=30)
 
 ---
 
@@ -543,6 +598,13 @@ furnished to do so, subject to the following conditions:
 
 ---
 
+## 📊 Statistics
+
+![GitHub stars](https://img.shields.io/github/stars/navneetshukla/modelstack-benchmark-studio?style=social)
+![GitHub forks](https://img.shields.io/github/forks/navneetshukla/modelstack-benchmark-studio?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/navneetshukla/modelstack-benchmark-studio?style=social)
+
+---
 
 <div align="center">
 
