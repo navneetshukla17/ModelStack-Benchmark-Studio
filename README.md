@@ -11,9 +11,8 @@ ModelStack Benchmark Studio is a comprehensive web-based tool designed to demons
 
 ---
 
-## 🚀 Live Demo
-
-**Try it now:** [[https://navneet-shukla-communication-scorer-nirmaan-ai.streamlit.app/](https://navneet-shukla-communication-scorer-nirmaan-ai.streamlit.app/)](https://navneet-shukla-modelstack-benchmark-studio.streamlit.app/)
+👉 **Try it now:**  
+🔗 https://navneet-shukla-modelstack-benchmark-studio.streamlit.app/
 
 ---
 
