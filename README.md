@@ -483,7 +483,7 @@ If you use this tool in your research or projects, please cite:
   title={Enhancing Model Robustness through Bagging-Based Ensemble Learning},
   author={Shukla, Navneet},
   month={March},
-  year={2022},
+  year={2024},
   supervisor={Mishra, Padma},
   institution={Thakur Institute of Management Studies, Career Development \& Research (TIMSCDR)},
   note={Interactive Streamlit-based platform for ensemble learning visualization}
@@ -492,15 +492,13 @@ If you use this tool in your research or projects, please cite:
 
 **Research Paper:**
 ```
-Shukla, N., Siddiquie, A., & Mishra, P. (2022). 
+Shukla Navneet & Mishra Padma (2024). 
 "Enhancing Model Robustness through Bagging-Based Ensemble Learning." 
-tinyML Research Symposium'22, March 2022, San Jose, CA.
 Thakur Institute of Management Studies, Career Development & Research (TIMSCDR).
 ```
 
 **Authors:**
 - **Navneet Shukla** (182) - shuklanavneet2817@gmail.com
-- **Aadil Siddiquie** (183) - aadil.siddiquie183@gmail.com
 - **Research Supervisor:** Dr. Padma Mishra
 
 **Institution:**
@@ -544,10 +542,6 @@ SOFTWARE.
 **Authors:**
 - **Navneet Shukla** (182)
   - Email: shuklanavneet2817@gmail.com
-  - Institution: Thakur Institute of Management Studies, Career Development & Research (TIMSCDR)
-
-- **Aadil Siddiquie** (183)
-  - Email: aadil.siddiquie183@gmail.com
   - Institution: Thakur Institute of Management Studies, Career Development & Research (TIMSCDR)
 
 **Research Supervisor:**
@@ -598,13 +592,7 @@ SOFTWARE.
 
 ---
 
-## 📊 Statistics
 
-![GitHub stars](https://img.shields.io/github/stars/navneetshukla/modelstack-benchmark-studio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/navneetshukla/modelstack-benchmark-studio?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/navneetshukla/modelstack-benchmark-studio?style=social)
-
----
 
 <div align="center">
 
