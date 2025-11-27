@@ -1,0 +1,36 @@
+# Python / env
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Trained ML models and data (do NOT commit large files)
+trained_models/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+*.bin
+*.zip
+*.tar.gz
+
+# Databases / experiment logs
+*.db
+ml_experiments.db
+ml_experiments.sqlite
+
+# Streamlit / runtime
+.streamlit/
+uv.lock
+
+# IDEs
+.vscode/
+.idea/
+
+# Other
+*.log
+EOF
